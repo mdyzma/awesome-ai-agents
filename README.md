@@ -23,12 +23,12 @@ Command-line AI assistants that bring powerful AI capabilities directly to your 
 - [Aider](https://github.com/Aider-AI/aider) - AI pair programming in your terminal with Git integration and multi-file editing support.
 - [Claude-CLI](https://github.com/dvcrn/anthropic-cli) - Command-line interface for Anthropic's Claude API with image support and customizable parameters.
 - [Codex](https://github.com/openai/codex) - OpenAI's lightweight coding agent that converts natural language to code and runs locally.
-- [Copilot CLI](https://githubnext.com/projects/copilot-cli) - GitHub's AI-powered command-line assistant for generating shell commands.
+- [Copilot CLI](https://github.com/features/copilot/cli) - GitHub's AI-powered command-line assistant for generating shell commands.
 - [Gemini CLI](https://github.com/google-gemini/gemini-cli) - Google's terminal-based AI agent with powerful code understanding and GitHub Actions integration.
 - [Goose CLI](https://github.com/block/goose) - Open-source local AI agent by Block with extensible MCP server support and customizable autonomy.
 - [OpenCode](https://github.com/anomalyco/opencode) - Open-source AI coding agent available as CLI, desktop app, and IDE extension with 75+ LLM providers support.
-- [Plandex](https://github.com/plandexapp/plandex) - Terminal-based AI designed for large projects with 2M+ token context window and multi-step task planning.
-- [QwenCode](https://github.com/QwenLM/qwencode) - Terminal AI agent optimized for Qwen3-Coder models with IDE integration and agentic workflows.
+- [Plandex](https://github.com/plandex-ai/plandex) - Terminal-based AI designed for large projects with 2M+ token context window and multi-step task planning.
+- [QwenCode](https://github.com/QwenLM/qwen-code) - Terminal AI agent optimized for Qwen3-Coder models with IDE integration and agentic workflows.
 
 ## Web-Based Chat Interfaces
 
@@ -67,8 +67,8 @@ Browser-based autonomous agents and frameworks for automating web tasks and buil
 - [Bardeen](https://www.bardeen.ai) - Browser automation extension with AI-powered workflow builder and data scraping.
 - [BrowserAgent](https://browseragent.dev) - Privacy-first Chrome extension for running local AI agents with no-code workflow builder.
 - [Fellou AI](https://fellou.ai) - Self-driving browser for automating multi-step tasks with AI workflow intervention.
-- [Project Mariner](https://deepmind.google/discover/blog/project-mariner/) - Google DeepMind's research prototype for human-agent interaction in browsers.
-- [Web-UI](https://github.com/web-ui/web-ui) - User-friendly browser interface for AI agents built on browser-use framework.
+- [Project Mariner](https://deepmind.google/models/project-mariner/) - Google DeepMind's research prototype for human-agent interaction in browsers.
+- [Web-UI](https://github.com/browser-use/web-ui) - User-friendly browser interface for AI agents built on browser-use framework.
 - [Zapier Agents](https://zapier.com/agents) - Chrome extension integrating personalized AI agents into webpages for automation.
 
 **Frameworks & Libraries:**
@@ -79,7 +79,7 @@ Browser-based autonomous agents and frameworks for automating web tasks and buil
 - [OpenManus](https://github.com/openmanus/openmanus) - Multi-agent system for complex tasks with browser interaction capabilities.
 - [Skyvern-AI](https://github.com/Skyvern-AI/skyvern) - Browser control framework using visual language models and natural language.
 - [Stagehand](https://github.com/browserbase/stagehand) - Framework for building robust web agents with serverless browser support.
-- [UI-TARS](https://github.com/agent-tars/ui-tars) - Multimodal AI agent stack with GUI control for terminals, computers, and browsers.
+- [UI-TARS](https://github.com/bytedance/UI-TARS) - Multimodal AI agent stack with GUI control for terminals, computers, and browsers.
 
 ## Self-Hosted Solutions
 
@@ -112,7 +112,9 @@ Repositories, protocols, and resources for extending agent capabilities with mod
 
 Frameworks and SDKs for building custom AI agents, workflows, and agentic applications.
 
+- [LangChain](https://github.com/langchain-ai/langchain) - Framework for developing applications powered by LLMs with chains, agents, and memory.
 - [LangGraph](https://github.com/langchain-ai/langgraph) - Framework for building stateful, multi-actor applications with LLMs.
+- [LiteLLM](https://github.com/BerriAI/litellm) - Unified API for calling 100+ LLMs with OpenAI-compatible format and built-in observability.
 - [Langflow](https://langflow.org) - Low-code AI builder for constructing agents and MCP servers with visual interface.
 - [OpenAI AgentKit](https://platform.openai.com/docs/agents) - Tools for building agentic workflows with visual Agent Builder and Agents SDK.
 
