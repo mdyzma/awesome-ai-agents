@@ -1,101 +1,82 @@
-# GitHub MCP Server for Codex (Read-All + Write-Own)
+# GitHub MCP Server for Codex (Single Repo: mdyzma/awesome-ai-agents)
 
-This file configures the official GitHub MCP Server in Codex CLI and explains how to achieve:
+This file configures the official GitHub MCP Server in Codex CLI to read and write **only** the `mdyzma/awesome-ai-agents` repository, including Issues, PRs, and Projects (project boards).
 
-- Read access to all repositories you can access
-- Write access only to repos owned by `mdyzma`
+## 1) Create a GitHub Token (Least Privilege)
 
-There is no single "official" GitHub MCP server built into Codex. You choose the server. The official server is GitHub's `github/github-mcp-server`.
+Use a fine-grained PAT and limit access to just this repo.
 
-Remote server URL (hosted by GitHub):
-
-- `https://api.githubcopilot.com/mcp/`
-
-## Key Constraint (Important)
-
-A single GitHub token cannot grant "read all repos" AND "write only to my repos" at the same time.
-
-Why:
-
-- Fine-grained PATs are scoped to a single resource owner (one user or one org).
-- Classic PATs grant access to *all* repos you can access, and write permissions apply broadly.
-
-Therefore, use two tokens and register two MCP servers in Codex:
-
-- `github_read`: read-only token (broad read access)
-- `github_write_mdyzma`: write token for `mdyzma`-owned repos only
-
-Then, use the read-only server for general browsing and switch to the write server only when you need to create issues, PRs, or push changes.
-
-## Step 1: Create Tokens
-
-Token A (Read-only, broad):
-
-- Use a fine-grained PAT.
-- Resource owner: choose the user/org you want to read (start with `mdyzma`).
-- Repository access: choose the minimal set that covers your needs.
-- Permissions: start with `Contents: Read` and `Metadata: Read`, add more only if a tool fails.
-
-Token B (Write for `mdyzma` only):
-
-- Use a fine-grained PAT.
-- Resource owner: `mdyzma`.
-- Repository access: all `mdyzma` repos (or select only the ones you need).
-- Permissions: `Contents: Read and write`, `Metadata: Read`, plus other write scopes only if needed (Issues/PRs/Workflows/Gists, etc).
+UI steps (GitHub):
+1. Open GitHub in your browser.
+2. Go to Settings -> Developer settings -> Personal access tokens -> Fine-grained tokens.
+3. Click "Generate new token".
+4. Token name: `codex-mcp-awesome-ai-agents`.
+5. Expiration: choose a short/medium lifetime.
+6. Resource owner: `mdyzma`.
+7. Repository access: select "Only select repositories" -> check `mdyzma/awesome-ai-agents`.
+8. Permissions: set the following:
+   - `Contents: Read and write`
+   - `Metadata: Read`
+   - `Issues: Read and write`
+   - `Pull requests: Read and write`
+   - `Projects: Read and write`
+9. Click "Generate token" and copy it once.
 
 Notes:
+- Projects permission is required to move/close items on project boards.
+- If you prefer classic PATs, you must use `repo` scope and it will apply to *all* repos you can access. Fine-grained PAT is recommended to keep access scoped.
 
-- If you need read access to org repos and the org blocks fine-grained PATs, you may need org approval or a classic PAT (which is broader).
-- Classic PATs are less restrictive and apply to all repos you can access.
+## 2) Store the Token Securely (Persistent)
 
-## Step 2: Store Tokens in Environment Variables
+Use a persistent environment variable and do not commit it.
 
-Set these environment variables (do NOT put the token in git):
+Windows PowerShell (persistent, user scope):
+```powershell
+[Environment]::SetEnvironmentVariable("GITHUB_PAT_TOKEN", "<YOUR_TOKEN>", "User")
+```
 
-- `GITHUB_PAT_READ`
-- `GITHUB_PAT_WRITE_MDYZMA`
-
-## Step 3: Register Both MCP Servers in Codex
-
-Option A: CLI
-
+macOS zsh (persistent):
 ```sh
-codex mcp add github_read --url https://api.githubcopilot.com/mcp/
-codex mcp add github_write_mdyzma --url https://api.githubcopilot.com/mcp/
+echo 'export GITHUB_PAT_TOKEN="<YOUR_TOKEN>"' >> ~/.zshrc
+source ~/.zshrc
 ```
 
-Then map tokens in `~/.codex/config.toml`:
+## 3) Configure Codex
 
+The official GitHub MCP Server is hosted at:
+- `https://api.githubcopilot.com/mcp/`
+
+Add the server to Codex config at `~/.codex/config.toml`:
 ```toml
-[mcp_servers.github_read]
+[mcp_servers.github]
 url = "https://api.githubcopilot.com/mcp/"
-bearer_token_env_var = "GITHUB_PAT_READ"
-
-[mcp_servers.github_write_mdyzma]
-url = "https://api.githubcopilot.com/mcp/"
-bearer_token_env_var = "GITHUB_PAT_WRITE_MDYZMA"
+# Replace with your real PAT env var name.
+# Keep the token in your environment, not in the file.
+bearer_token_env_var = "GITHUB_PAT_TOKEN"
 ```
 
-Option B: Direct config only (same TOML as above).
+You can also add the server via CLI:
+```sh
+codex mcp add github --url https://api.githubcopilot.com/mcp/
+```
 
-## Step 4: Verify
+## 4) Verify
 
 In Codex:
+- Run `/mcp` in the TUI or use the MCP panel in the IDE.
+- Ask: "List repos I can access" and verify only `mdyzma/awesome-ai-agents` is writable.
+- Ask: "List project boards" and verify you can move items.
 
-```sh
-codex mcp list
-```
+If you see permission errors, add only the missing permission in the fine-grained PAT and retry.
 
-Then test:
+## Permission Troubleshooting
 
-- Use the read server to list repos
-- Use the write server to create an issue in `mdyzma/<repo>`
-
-If you get permission errors:
-
-- Add only the missing permission (least-privilege)
-- Ensure the correct server is selected for the action
-
-## If You Want a Single Server Instead
-
-Use one classic PAT with `repo` scope. This gives read/write access to all repos you can access. It does NOT enforce "write only my repos".
+If Codex (via the MCP server) fails an action, the error usually indicates a missing permission. Common mappings:
+- Can't read repo files or branch contents: add `Contents: Read`.
+- Can't push commits / update files: add `Contents: Read and write`.
+- Can't view issues: add `Issues: Read`.
+- Can't create or close issues: add `Issues: Read and write`.
+- Can't view PRs: add `Pull requests: Read`.
+- Can't open or update PRs: add `Pull requests: Read and write`.
+- Can't list or move project board items: add `Projects: Read` or `Projects: Read and write`.
+- "Resource not accessible by integration": make sure the PAT is scoped to `mdyzma/awesome-ai-agents` and you selected the correct resource owner.
