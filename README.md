@@ -129,6 +129,7 @@ Additional platforms, services, and research projects in the AI agent ecosystem.
 
 - [GitHub Agentic Workflows](https://github.blog/changelog/agentic-workflows) - AI agents running within GitHub Actions for repository automation.
 - [Google AI Studio](https://ai.google.dev/aistudio) - Google's platform for prototyping with generative AI models.
+- [OpenRouter](https://openrouter.ai) - Unified API for accessing 200+ LLMs from multiple providers with built-in fallbacks and loadbalancing.
 
 **Autonomous Agents:**
 
