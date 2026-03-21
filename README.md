@@ -12,6 +12,7 @@ AI agents are transforming software development by providing intelligent assista
 - [Web UI Agents & Frameworks](#web-ui-agents--frameworks)
 - [Self-Hosted Solutions](#self-hosted-solutions)
 - [Agent Skills & Resources](#agent-skills--resources)
+- [Prompt Management & Libraries](#prompt-management--libraries)
 - [Development Frameworks](#development-frameworks)
 - [Other Notable Tools](#other-notable-tools)
 - [Contributing](#contributing)
@@ -99,14 +100,28 @@ Privacy-focused platforms for running AI agents and chat interfaces locally or o
 
 Repositories, protocols, and resources for extending agent capabilities with modular skills.
 
+- [Agent Skills Repo](https://agentskillsrepo.com) - 100K+ skills for Claude/Cursor; categories like dev, data, security, productivity.
 - [Agent Skills Specification](https://github.com/skillmatic-ai/awesome-agent-skills) - Definitive resource for modular, standardized SKILL.md packages for AI agents.
 - [Awesome OpenClaw Skills](https://aiagentstore.ai/awesome-openclaw-skills) - Curated catalog of community-built skills for OpenClaw organized by category.
 - [Claude Code Skills](https://code.claude.com/docs/en/skills) - Official Claude skills documentation and templates.
+- [ClawMart](https://clawmart.pro) - Simple buy/sell for skill files; quick listing, usage-based payments.
 - [Claw Tasks](https://clawtasks.com) - Platform for discovering and sharing agent task definitions.
 - [MCP Market](https://mcpmarket.com) - Discover Model Context Protocol servers for connecting AI clients to tools.
 - [Microsoft AI Skills](https://github.com/microsoft/skills) - Skills, MCP servers, and configurations for Azure SDKs and Microsoft AI Foundry.
 - [Skillcreator AI](https://github.com/skillcreatorai/Awesome-Agent-Skills) - Universal skill repository compatible with various AI coding agents.
+- [Skills Store](https://skillsstore.ai) - Verified, security-audited skills via API; creators set prices, handles payments for downloads.
+- [SkillzWave](https://skillzwave.ai) - Largest collection with 44,000+ curated skills; CLI-based (skilz install), quality scores, domain packages for legal/finance/real estate.
+- [Smithery](https://smithery.ai) - Community-built skills for memory, search, trading; Model Context Protocol integration.
 - [VoltAgent Skills](https://github.com/VoltAgent/awesome-agent-skills) - 300+ agent skills from official teams and community for multiple platforms.
+
+## Prompt Management & Libraries
+
+Tools for building, versioning, and optimizing prompts for LLM-based agents.
+
+- [AIPRM](https://www.aiprm.com) - Browser extension with thousands of pre-built prompts integrated with ChatGPT for quick prototyping.
+- [God of Prompt](https://www.godofprompt.ai) - Curated library of 30,000+ prompts for diverse agent use cases including marketing and sales.
+- [LangSmith](https://www.langchain.com/langsmith) - Observability platform for production agents with deep tracing, evaluation, and prompt management.
+- [PromptLayer](https://promptlayer.com) - Visual agent builder and management platform providing prompt versioning, analytics, and A/B testing.
 
 ## Development Frameworks
 
