@@ -116,6 +116,7 @@ Frameworks and SDKs for building custom AI agents, workflows, and agentic applic
 - [LangGraph](https://github.com/langchain-ai/langgraph) - Framework for building stateful, multi-actor applications with LLMs.
 - [LiteLLM](https://github.com/BerriAI/litellm) - Unified API for calling 100+ LLMs with OpenAI-compatible format and built-in observability.
 - [Langflow](https://langflow.org) - Low-code AI builder for constructing agents and MCP servers with visual interface.
+- [Deep Agents](https://docs.langchain.com/oss/python/deepagents/overview#deep-agents-overview) - Building agents with task planning, file systems for context management and subagent-spawning.
 - [OpenAI AgentKit](https://platform.openai.com/docs/agents) - Tools for building agentic workflows with visual Agent Builder and Agents SDK.
 
 ## Other Notable Tools
