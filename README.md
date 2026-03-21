@@ -129,11 +129,12 @@ Tools for building, versioning, and optimizing prompts for LLM-based agents.
 
 Frameworks and SDKs for building custom AI agents, workflows, and agentic applications.
 
+- [Deep Agents](https://docs.langchain.com/oss/python/deepagents/overview#deep-agents-overview) - Building agents with task planning, file systems for context management and subagent-spawning.
 - [LangChain](https://github.com/langchain-ai/langchain) - Framework for developing applications powered by LLMs with chains, agents, and memory.
+- [Langflow](https://langflow.org) - Low-code AI builder for constructing agents and MCP servers with visual interface.
 - [LangGraph](https://github.com/langchain-ai/langgraph) - Framework for building stateful, multi-actor applications with LLMs.
 - [LiteLLM](https://github.com/BerriAI/litellm) - Unified API for calling 100+ LLMs with OpenAI-compatible format and built-in observability.
-- [Langflow](https://langflow.org) - Low-code AI builder for constructing agents and MCP servers with visual interface.
-- [Deep Agents](https://docs.langchain.com/oss/python/deepagents/overview#deep-agents-overview) - Building agents with task planning, file systems for context management and subagent-spawning.
+- [Mem0](https://github.com/mem0ai/mem0) - Intelligent memory layer that stores evolving user preferences and facts for a stateful development experience.
 - [OpenAI AgentKit](https://platform.openai.com/docs/agents) - Tools for building agentic workflows with visual Agent Builder and Agents SDK.
 
 ## Other Notable Tools
@@ -149,6 +150,7 @@ Additional platforms, services, and research projects in the AI agent ecosystem.
 
 - [GitHub Agentic Workflows](https://github.blog/changelog/agentic-workflows) - AI agents running within GitHub Actions for repository automation.
 - [Google AI Studio](https://ai.google.dev/aistudio) - Google's platform for prototyping with generative AI models.
+- [OneContext](https://onecontext.ai/) - Context platform for building RAG-powered applications with integrated vector database and retrieval infrastructure.
 - [OpenRouter](https://openrouter.ai) - Unified API for accessing 200+ LLMs from multiple providers with built-in fallbacks and loadbalancing.
 
 **Autonomous Agents:**
@@ -158,6 +160,7 @@ Additional platforms, services, and research projects in the AI agent ecosystem.
 
 **AI-Powered Tools:**
 
+- [MemSync](https://www.memsync.ai/) - Universal memory vault that syncs user context and project history across multiple chat platforms.
 - [NotebookLM](https://notebooklm.google.com) - AI-powered research and note-taking assistant from Google.
 - [Perplexity](https://www.perplexity.ai) - AI-powered search engine with conversational interface and citation support.
 
