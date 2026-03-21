@@ -108,10 +108,12 @@ Repositories, protocols, and resources for extending agent capabilities with mod
 - [Claw Tasks](https://clawtasks.com) - Platform for discovering and sharing agent task definitions.
 - [MCP Market](https://mcpmarket.com) - Discover Model Context Protocol servers for connecting AI clients to tools.
 - [Microsoft AI Skills](https://github.com/microsoft/skills) - Skills, MCP servers, and configurations for Azure SDKs and Microsoft AI Foundry.
+- [OpenSpec](https://github.com/Fission-AI/OpenSpec) - Lightweight, community-driven framework for Spec-Driven Development (SDD) across 20+ AI coding assistants.
 - [Skillcreator AI](https://github.com/skillcreatorai/Awesome-Agent-Skills) - Universal skill repository compatible with various AI coding agents.
 - [Skills Store](https://skillsstore.ai) - Verified, security-audited skills via API; creators set prices, handles payments for downloads.
 - [SkillzWave](https://skillzwave.ai) - Largest collection with 44,000+ curated skills; CLI-based (skilz install), quality scores, domain packages for legal/finance/real estate.
 - [Smithery](https://smithery.ai) - Community-built skills for memory, search, trading; Model Context Protocol integration.
+- [Spec Kit](https://github.com/github/spec-kit) - Toolkit for Spec-Driven Development (SDD) providing structured workflows and slash commands for AI agents.
 - [VoltAgent Skills](https://github.com/VoltAgent/awesome-agent-skills) - 300+ agent skills from official teams and community for multiple platforms.
 
 ## Prompt Management & Libraries
