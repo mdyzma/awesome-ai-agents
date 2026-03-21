@@ -137,6 +137,7 @@ Additional platforms, services, and research projects in the AI agent ecosystem.
 **Autonomous Agents:**
 
 - [OpenClaw](https://github.com/openclaw/openclaw) - Free open-source autonomous AI agent with 50+ messaging platform integrations.
+- [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) - Fast, lightweight autonomous AI assistant infrastructure written in Rust for self-hosted deployments.
 
 **AI-Powered Tools:**
 
