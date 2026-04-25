@@ -27,6 +27,7 @@ Command-line AI assistants that bring powerful AI capabilities directly to your 
 - [Copilot CLI](https://github.com/features/copilot/cli) - GitHub's AI-powered command-line assistant for generating shell commands.
 - [Gemini CLI](https://github.com/google-gemini/gemini-cli) - Google's terminal-based AI agent with powerful code understanding and GitHub Actions integration.
 - [Goose CLI](https://github.com/block/goose) - Open-source local AI agent by Block with extensible MCP server support and customizable autonomy.
+- [Oh My Pi](https://github.com/can1357/oh-my-pi) - AI-powered command-line assistant designed to enhance shell productivity.
 - [OpenCode](https://github.com/anomalyco/opencode) - Open-source AI coding agent available as CLI, desktop app, and IDE extension with 75+ LLM providers support.
 - [Plandex](https://github.com/plandex-ai/plandex) - Terminal-based AI designed for large projects with 2M+ token context window and multi-step task planning.
 - [QwenCode](https://github.com/QwenLM/qwen-code) - Terminal AI agent optimized for Qwen3-Coder models with IDE integration and agentic workflows.
@@ -78,6 +79,7 @@ Browser-based autonomous agents and frameworks for automating web tasks and buil
 - [LaVague](https://github.com/lavague-ai/LaVague) - Control web browsers using natural language with text language models.
 - [Mastra](https://mastra.ai) - TypeScript framework for building agents, workflows, and browser automation.
 - [OpenManus](https://github.com/openmanus/openmanus) - Multi-agent system for complex tasks with browser interaction capabilities.
+- [Pi.dev](https://pi.dev/) - Platform for building and deploying AI agents with web interaction and automation capabilities.
 - [Skyvern-AI](https://github.com/Skyvern-AI/skyvern) - Browser control framework using visual language models and natural language.
 - [Stagehand](https://github.com/browserbase/stagehand) - Framework for building robust web agents with serverless browser support.
 - [UI-TARS](https://github.com/bytedance/UI-TARS) - Multimodal AI agent stack with GUI control for terminals, computers, and browsers.
