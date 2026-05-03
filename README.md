@@ -109,6 +109,7 @@ Repositories, protocols, and resources for extending agent capabilities with mod
 - [ClawMart](https://clawmart.pro) - Simple buy/sell for skill files; quick listing, usage-based payments.
 - [Claw Tasks](https://clawtasks.com) - Platform for discovering and sharing agent task definitions.
 - [Context Mode](https://github.com/mksglu/context-mode) - MCP server and virtualization layer for LLM context that reduces bloat and ensures session continuity.
+- [Context7](https://skills.sh/) - Open ecosystem for modular skills providing reusable capabilities and procedural knowledge.
 - [MCP Market](https://mcpmarket.com) - Discover Model Context Protocol servers for connecting AI clients to tools.
 - [Microsoft AI Skills](https://github.com/microsoft/skills) - Skills, MCP servers, and configurations for Azure SDKs and Microsoft AI Foundry.
 - [OpenSpec](https://github.com/Fission-AI/OpenSpec) - Lightweight, community-driven framework for Spec-Driven Development (SDD) across 20+ AI coding assistants.
