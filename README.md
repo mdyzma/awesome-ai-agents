@@ -31,6 +31,7 @@ Command-line AI assistants that bring powerful AI capabilities directly to your 
 - [OpenCode](https://github.com/anomalyco/opencode) - Open-source AI coding agent available as CLI, desktop app, and IDE extension with 75+ LLM providers support.
 - [Plandex](https://github.com/plandex-ai/plandex) - Terminal-based AI designed for large projects with 2M+ token context window and multi-step task planning.
 - [QwenCode](https://github.com/QwenLM/qwen-code) - Terminal AI agent optimized for Qwen3-Coder models with IDE integration and agentic workflows.
+- [NotFair](https://notfair.co) - Google Ads MCP server. Connect Claude and AI agents to a Google Ads account: diagnose campaign performance, recommend optimizations, and execute approved changes via the Google Ads API. Source: github.com/nowork-studio/toprank. Free tier available.
 
 ## Web-Based Chat Interfaces
 
