@@ -111,6 +111,7 @@ Repositories, protocols, and resources for extending agent capabilities with mod
 - [Context Mode](https://github.com/mksglu/context-mode) - MCP server and virtualization layer for LLM context that reduces bloat and ensures session continuity.
 - [Context7](https://skills.sh/) - Open ecosystem for modular skills providing reusable capabilities and procedural knowledge.
 - [MCP Market](https://mcpmarket.com) - Discover Model Context Protocol servers for connecting AI clients to tools.
+- [NotFair](https://github.com/nowork-studio/NotFair) - Open-source Claude Code skills for SEO, Google Ads, and Meta Ads, connecting to live data via Google Ads MCP, Meta Ads MCP, Google Search Console MCP, and Google Analytics (GA4) MCP.
 - [Microsoft AI Skills](https://github.com/microsoft/skills) - Skills, MCP servers, and configurations for Azure SDKs and Microsoft AI Foundry.
 - [OpenSpec](https://github.com/Fission-AI/OpenSpec) - Lightweight, community-driven framework for Spec-Driven Development (SDD) across 20+ AI coding assistants.
 - [Skillcreator AI](https://github.com/skillcreatorai/Awesome-Agent-Skills) - Universal skill repository compatible with various AI coding agents.
