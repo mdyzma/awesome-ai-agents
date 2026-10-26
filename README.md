@@ -102,6 +102,7 @@ Privacy-focused platforms for running AI agents and chat interfaces locally or o
 
 Repositories, protocols, and resources for extending agent capabilities with modular skills.
 
+- [Agent Payment Node](https://github.com/nuanu-ai/agent-payment-node) - Local payment runtime and stdio MCP tools for x402 offer inspection, bounded payment preparation, and receipts on Apple Silicon macOS with Node 24.
 - [Agent Skills Repo](https://agentskillsrepo.com) - 100K+ skills for Claude/Cursor; categories like dev, data, security, productivity.
 - [Agent Skills Specification](https://github.com/skillmatic-ai/awesome-agent-skills) - Definitive resource for modular, standardized SKILL.md packages for AI agents.
 - [Awesome OpenClaw Skills](https://aiagentstore.ai/awesome-openclaw-skills) - Curated catalog of community-built skills for OpenClaw organized by category.
